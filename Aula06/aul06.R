@@ -54,7 +54,7 @@ snail_data[which.max(snail_data$Depth), 6] = 1.62
 snail_data$Depth[which.max(snail_data$Depth)] = 1.62
 
 # Exportar os dados corrigidos
-write.csv(snail_data, file = "snail_feeding_ok.csv", row.names = FALSE)
+write.csv(snail_data, file = "snail_feeding_ok.csv", row.names = FALSE, fileEncoding = "UTF-8")
 save(snail_data, file = "snail_feeding.Rdata")
 
 # Remover/Limpar variáveis do ambiente
